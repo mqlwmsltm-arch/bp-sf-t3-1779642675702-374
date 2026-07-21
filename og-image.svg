@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d5016"/>
+      <stop offset="100%" stop-color="#1a3a0a"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c8a96e"/>
+      <stop offset="100%" stop-color="#1a3a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Geometric pattern -->
+  <circle cx="1025" cy="292" r="74" fill="#1a3a0a" opacity="0.13"/>
+    <circle cx="786" cy="489" r="42" fill="#1a3a0a" opacity="0.07"/>
+    <circle cx="1236" cy="547" r="41" fill="#1a3a0a" opacity="0.17"/>
+    <circle cx="1281" cy="291" r="28" fill="#1a3a0a" opacity="0.19"/>
+    <circle cx="23" cy="-17" r="78" fill="#1a3a0a" opacity="0.10"/>
+    <circle cx="921" cy="-54" r="50" fill="#1a3a0a" opacity="0.07"/>
+    <rect x="1013" y="692" width="68" height="48" rx="8" fill="#2d5016" opacity="0.06" transform="rotate(22, 1279, 479)"/>
+    <rect x="815" y="137" width="20" height="92" rx="8" fill="#2d5016" opacity="0.06" transform="rotate(32, 152, 439)"/>
+    <rect x="462" y="5" width="47" height="20" rx="8" fill="#2d5016" opacity="0.08" transform="rotate(38, -16, 690)"/>
+    <rect x="690" y="185" width="71" height="48" rx="8" fill="#2d5016" opacity="0.06" transform="rotate(17, 968, 43)"/>
+    <rect x="1288" y="465" width="21" height="25" rx="8" fill="#2d5016" opacity="0.13" transform="rotate(22, 655, 349)"/>
+    <rect x="1198" y="21" width="70" height="22" rx="8" fill="#2d5016" opacity="0.08" transform="rotate(29, 268, 210)"/>
+    <rect x="1139" y="697" width="85" height="89" rx="8" fill="#2d5016" opacity="0.07" transform="rotate(43, 279, -81)"/>
+    <rect x="1298" y="300" width="87" height="69" rx="8" fill="#2d5016" opacity="0.11" transform="rotate(31, 662, 720)"/>
+    <polygon points="890,-89 978,87 802,87" fill="#1a3a0a" opacity="0.07"/>
+    <polygon points="432,149 512,309 352,309" fill="#1a3a0a" opacity="0.04"/>
+    <polygon points="766,-144 841,6 691,6" fill="#1a3a0a" opacity="0.03"/>
+    <polygon points="1131,681 1168,755 1094,755" fill="#1a3a0a" opacity="0.11"/>
+
+  <!-- Wave at bottom -->
+  <path d="M0,562 C360,596 840,528 1200,562 L1200,630 L0,630Z" fill="#1a3a0a" opacity="0.3"/>
+
+  <!-- 중앙 텍스트 카드 -->
+  <rect x="80" y="195" width="1040" height="260" rx="20" fill="rgba(0,0,0,0.35)" filter="url(#blur-bg)"/>
+  <filter id="blur-bg"><feGaussianBlur stdDeviation="8"/></filter>
+
+  <text x="600" y="270" text-anchor="middle" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="44" font-weight="700" fill="#ffffff" letter-spacing="2">
+    화곡 셔츠룸
+  </text>
+  <text x="600" y="330" text-anchor="middle" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="22" font-weight="400" fill="rgba(255,255,255,0.85)">
+    마포 — AI트렌드
+  </text>
+
+  <!-- Accent line -->
+  <line x1="450" y1="355" x2="750" y2="355" stroke="#c8a96e" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- 하단 CTA -->
+  <rect x="440" y="385" width="320" height="40" rx="20" fill="#c8a96e" opacity="0.9"/>
+  <text x="600" y="411" text-anchor="middle" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="16" font-weight="600" fill="#ffffff">
+    ▼ 자세히 보기
+  </text>
+
+  <!-- 상단 브랜드 -->
+  <text x="60" y="55" font-family="'Noto Sans JP','Noto Sans KR','Pretendard',sans-serif" font-size="18" font-weight="600" fill="rgba(255,255,255,0.6)">
+    마포 화곡 셔츠룸 — AI트렌드
+  </text>
+</svg>
