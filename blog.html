@@ -1,322 +1,321 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>화곡 셔츠룸 블로그 | 마포 AI트렌드 인사이트</title>
-    <meta name="description" content="마포 AI트렌드 기반 화곡 셔츠룸 전문 블로그: 업종 동향, 고객 데이터 분석, 서비스 트렌드에 대한 권위 있는 인사이트를 제공합니다.">
-    <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, AI트렌드, 셔츠룸 블로그, 업종 분석, 고객 리뷰">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-warm-grid">
-    <link rel="canonical" href="https://sf-t3-1779642675702-374.maphoshirts.xyz/blog.html">
-    <meta property="og:title" content="화곡 셔츠룸 트렌드 인사이트 | 마포 AI트렌드 블로그">
-    <meta property="og:description" content="마포 AI트렌드 기반 화곡 셔츠룸 전문 블로그: 데이터로 검증된 업종 동향과 서비스 분석을 제공합니다.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://sf-t3-1779642675702-374.maphoshirts.xyz/blog.html">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background-color: #fafaf5;
-            color: #1d1d1f;
-            line-height: 1.6;
-            -webkit-font-smoothing: antialiased;
-        }
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e5e0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(12px);
-            background-color: rgba(255, 255, 255, 0.92);
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 24px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .logo {
-            font-size: 1.3rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            color: #1d1d1f;
-            text-decoration: none;
-        }
-        .nav-links {
-            display: flex;
-            gap: 28px;
-            list-style: none;
-            align-items: center;
-        }
-        .nav-links a {
-            text-decoration: none;
-            color: #515154;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: color 0.2s ease;
-            letter-spacing: -0.01em;
-        }
-        .nav-links a:hover {
-            color: #0071e3;
-        }
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 4px;
-        }
-        .hamburger span {
-            display: block;
-            width: 24px;
-            height: 2px;
-            background-color: #1d1d1f;
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #ffffff;
-                border-bottom: 1px solid #e5e5e0;
-                padding: 20px 24px;
-                gap: 18px;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger {
-                display: flex;
-            }
-            .hamburger.active span:nth-child(1) {
-                transform: rotate(45deg) translate(5px, 5px);
-            }
-            .hamburger.active span:nth-child(2) {
-                opacity: 0;
-            }
-            .hamburger.active span:nth-child(3) {
-                transform: rotate(-45deg) translate(5px, -5px);
-            }
-        }
-        /* Tel link */
-        .tel-link {
-            font-weight: 600;
-            color: #0071e3;
-            text-decoration: none;
-        }
-        .tel-link:hover {
-            text-decoration: underline;
-        }
-        /* Blog Article Styles */
-        .blog-article {
-            padding: 60px 0 80px;
-        }
-        .blog-article h1 {
-            font-size: 2.4rem;
-            font-weight: 700;
-            letter-spacing: -0.03em;
-            line-height: 1.15;
-            margin-bottom: 16px;
-            color: #1d1d1f;
-        }
-        .blog-article .meta {
-            font-size: 0.9rem;
-            color: #86868b;
-            margin-bottom: 40px;
-            border-bottom: 1px solid #e5e5e0;
-            padding-bottom: 20px;
-        }
-        .blog-article h2 {
-            font-size: 1.6rem;
-            font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-top: 48px;
-            margin-bottom: 16px;
-            color: #1d1d1f;
-        }
-        .blog-article h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin-top: 32px;
-            margin-bottom: 12px;
-            color: #2d2d2f;
-        }
-        .blog-article p {
-            font-size: 1.05rem;
-            color: #3a3a3c;
-            margin-bottom: 20px;
-            max-width: 720px;
-        }
-        .blog-article .highlight-box {
-            background: #ffffff;
-            border-left: 4px solid #0071e3;
-            padding: 20px 24px;
-            border-radius: 8px;
-            margin: 28px 0;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-        }
-        .blog-article .highlight-box p {
-            margin-bottom: 0;
-            font-weight: 500;
-        }
-        .blog-article .data-point {
-            display: inline-block;
-            background: #f0f0eb;
-            padding: 2px 10px;
-            border-radius: 12px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: #1d1d1f;
-        }
-        .blog-article ul {
-            list-style: none;
-            padding-left: 0;
-            margin-bottom: 24px;
-        }
-        .blog-article ul li {
-            padding: 8px 0 8px 28px;
-            position: relative;
-            font-size: 1.05rem;
-            color: #3a3a3c;
-        }
-        .blog-article ul li::before {
-            content: "→";
-            position: absolute;
-            left: 0;
-            color: #0071e3;
-            font-weight: 600;
-        }
-        .blog-article .cta-section {
-            background: #ffffff;
-            border: 1px solid #e5e5e0;
-            border-radius: 16px;
-            padding: 32px 36px;
-            margin-top: 48px;
-            text-align: center;
-        }
-        .blog-article .cta-section p {
-            font-size: 1.15rem;
-            font-weight: 500;
-            margin-bottom: 12px;
-        }
-        .blog-article .cta-section a {
-            display: inline-block;
-            background: #0071e3;
-            color: #ffffff;
-            padding: 12px 32px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            transition: background 0.2s ease;
-        }
-        .blog-article .cta-section a:hover {
-            background: #005bbf;
-        }
-        footer {
-            background: #f5f5f0;
-            padding: 40px 0;
-            border-top: 1px solid #e5e5e0;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #86868b;
-        }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>화곡 셔츠룸 블로그 | 마포 AI트렌드 인사이트</title>
+ <meta name="description" content="마포 AI트렌드 기반 화곡 셔츠룸 전문 블로그: 업종 동향, 고객 데이터 분석, 서비스 트렌드에 대한 권위 있는 인사이트를 제공합니다.">
+ <meta name="keywords" content="화곡 셔츠룸, 마포 셔츠룸, AI트렌드, 셔츠룸 블로그, 업종 분석, 고객 리뷰">
+ <link rel="canonical" href="https://sf-t3-1779642675702-374.maphoshirts.xyz/blog.html">
+ <meta property="og:title" content="화곡 셔츠룸 블로그 | 마포 AI트렌드 인사이트">
+ <meta property="og:description" content="마포 AI트렌드 기반 화곡 셔츠룸 전문 블로그: 업종 동향, 고객 데이터 분석, 서비스 트렌드에 대한 권위 있는 인사이트를 제공합니다.">
+ <meta property="og:type" content="article">
+ <meta property="og:url" content="https://sf-t3-1779642675702-374.maphoshirts.xyz/blog.html">
+ <style>
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+ background-color: #fafaf5;
+ color: #1d1d1f;
+ line-height: 1.6;
+ -webkit-font-smoothing: antialiased;
+ }
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 24px;
+ }
+ header {
+ background: #ffffff;
+ border-bottom: 1px solid #e5e5e0;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ backdrop-filter: blur(12px);
+ background-color: rgba(255, 255, 255, 0.92);
+ }
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 16px 24px;
+ max-width: 1100px;
+ margin: 0 auto;
+ }
+ .logo {
+ font-size: 1.3rem;
+ font-weight: 600;
+ letter-spacing: -0.02em;
+ color: #1d1d1f;
+ text-decoration: none;
+ }
+ .nav-links {
+ display: flex;
+ gap: 28px;
+ list-style: none;
+ align-items: center;
+ }
+ .nav-links a {
+ text-decoration: none;
+ color: #515154;
+ font-size: 0.95rem;
+ font-weight: 500;
+ transition: color 0.2s ease;
+ letter-spacing: -0.01em;
+ }
+ .nav-links a:hover {
+ color: #0071e3;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 4px;
+ }
+ .hamburger span {
+ display: block;
+ width: 24px;
+ height: 2px;
+ background-color: #1d1d1f;
+ border-radius: 2px;
+ transition: all 0.3s ease;
+ }
+ @media (max-width: 768px) {
+ .nav-links {
+ display: none;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: #ffffff;
+ border-bottom: 1px solid #e5e5e0;
+ padding: 20px 24px;
+ gap: 18px;
+ box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .hamburger.active span:nth-child(1) {
+ transform: rotate(45deg) translate(5px, 5px);
+ }
+ .hamburger.active span:nth-child(2) {
+ opacity: 0;
+ }
+ .hamburger.active span:nth-child(3) {
+ transform: rotate(-45deg) translate(5px, -5px);
+ }
+ }
+ /* Tel link */
+ .tel-link {
+ font-weight: 600;
+ color: #0071e3;
+ text-decoration: none;
+ }
+ .tel-link:hover {
+ text-decoration: underline;
+ }
+ /* Blog Article Styles */
+ .blog-article {
+ padding: 60px 0 80px;
+ }
+ .blog-article h1 {
+ font-size: 2.4rem;
+ font-weight: 700;
+ letter-spacing: -0.03em;
+ line-height: 1.15;
+ margin-bottom: 16px;
+ color: #1d1d1f;
+ }
+ .blog-article .meta {
+ font-size: 0.9rem;
+ color: #86868b;
+ margin-bottom: 40px;
+ border-bottom: 1px solid #e5e5e0;
+ padding-bottom: 20px;
+ }
+ .blog-article h2 {
+ font-size: 1.6rem;
+ font-weight: 600;
+ letter-spacing: -0.02em;
+ margin-top: 48px;
+ margin-bottom: 16px;
+ color: #1d1d1f;
+ }
+ .blog-article h3 {
+ font-size: 1.2rem;
+ font-weight: 600;
+ margin-top: 32px;
+ margin-bottom: 12px;
+ color: #2d2d2f;
+ }
+ .blog-article p {
+ font-size: 1.05rem;
+ color: #3a3a3c;
+ margin-bottom: 20px;
+ max-width: 720px;
+ }
+ .blog-article .highlight-box {
+ background: #ffffff;
+ border-left: 4px solid #0071e3;
+ padding: 20px 24px;
+ border-radius: 8px;
+ margin: 28px 0;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+ }
+ .blog-article .highlight-box p {
+ margin-bottom: 0;
+ font-weight: 500;
+ }
+ .blog-article .data-point {
+ display: inline-block;
+ background: #f0f0eb;
+ padding: 2px 10px;
+ border-radius: 12px;
+ font-size: 0.9rem;
+ font-weight: 600;
+ color: #1d1d1f;
+ }
+ .blog-article ul {
+ list-style: none;
+ padding-left: 0;
+ margin-bottom: 24px;
+ }
+ .blog-article ul li {
+ padding: 8px 0 8px 28px;
+ position: relative;
+ font-size: 1.05rem;
+ color: #3a3a3c;
+ }
+ .blog-article ul li::before {
+ content: "→";
+ position: absolute;
+ left: 0;
+ color: #0071e3;
+ font-weight: 600;
+ }
+ .blog-article .cta-section {
+ background: #ffffff;
+ border: 1px solid #e5e5e0;
+ border-radius: 16px;
+ padding: 32px 36px;
+ margin-top: 48px;
+ text-align: center;
+ }
+ .blog-article .cta-section p {
+ font-size: 1.15rem;
+ font-weight: 500;
+ margin-bottom: 12px;
+ }
+ .blog-article .cta-section a {
+ display: inline-block;
+ background: #0071e3;
+ color: #ffffff;
+ padding: 12px 32px;
+ border-radius: 40px;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 1rem;
+ transition: background 0.2s ease;
+ }
+ .blog-article .cta-section a:hover {
+ background: #005bbf;
+ }
+ footer {
+ background: #f5f5f0;
+ padding: 40px 0;
+ border-top: 1px solid #e5e5e0;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #86868b;
+ }
+ </style>
+  <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/" class="logo">화곡 셔츠룸 AI트렌드</a>
-            <ul class="nav-links">
-                <li><a href="/">홈</a></li>
-                <li><a href="/about">소개</a></li>
-                <li><a href="/blog">블로그</a></li>
-                <li><a href="/contact">문의</a></li>
-                <li><a href="tel:0507-1234-5678" class="tel-link">0507-1234-5678</a></li>
-            </ul>
-            <button class="hamburger" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+ <header>
+ <nav>
+ <a href="/" class="logo">화곡 셔츠룸 AI트렌드</a>
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/about">소개</a></li>
+ <li><a href="/blog">블로그</a></li>
+ <li><a href="/contact">문의</a></li>
+ 
+ </ul>
+ <button class="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </button>
+ </nav>
+ </header>
 
-    <main class="container blog-article">
-        <article>
-            <h1>화곡 셔츠룸, 2025년 AI트렌드가 바꾼 서비스 품질의 기준</h1>
-            <div class="meta">2025년 4월 7일 · 마포 AI트렌드 연구소 · 4분 읽기</div>
+ <main class="container blog-article">
+ <article>
+ <h1>화곡 셔츠룸, 2025년 AI트렌드가 바꾼 서비스 품질의 기준</h1>
+ <div class="meta">2025년 4월 7일 · 마포 AI트렌드 연구소 · 4분 읽기</div>
 
-            <p>마포구 상업 지형도가 정밀하게 재편되고 있다. 특히 화곡 셔츠룸 업종은 2024년 하반기부터 AI 기반 고객 데이터 분석 시스템을 도입하며 기존 유사 업소와의 격차를 벌리고 있다. 본 기사는 현장 데이터와 업계 전문가 인터뷰를 바탕으로 화곡 셔츠룸의 서비스 혁신 패턴을 분석한다.</p>
+ <p>마포구 상업 지형도가 정밀하게 재편되고 있다. 특히 화곡 셔츠룸 업종은 2024년 하반기부터 AI 기반 고객 데이터 분석 시스템을 도입하며 기존 유사 업소와의 격차를 벌리고 있다. 본 기사는 현장 데이터와 업계 전문가 인터뷰를 바탕으로 화곡 셔츠룸의 서비스 혁신 패턴을 분석한다.</p>
 
-            <h2>AI트렌드가 만든 새로운 고객 경험</h2>
-            <p>화곡 셔츠룸 8개 주요 업소를 대상으로 한 조사에 따르면, 2025년 1분기 기준 AI 기반 추천 시스템을 도입한 매장의 재방문율이 <span class="data-point">+34%</span> 상승한 것으로 나타났다. 이는 단순히 메뉴 추천을 넘어 고객의 선호 시간대, 체류 패턴, 커뮤니케이션 스타일까지 학습하는 맞춤형 서비스가 주효했다.</p>
+ <h2>AI트렌드가 만든 새로운 고객 경험</h2>
+ <p>화곡 셔츠룸 8개 주요 업소를 대상으로 한 조사에 따르면, 2025년 1분기 기준 AI 기반 추천 시스템을 도입한 매장의 재방문율이 <span class="data-point">+34%</span> 상승한 것으로 나타났다. 이는 단순히 메뉴 추천을 넘어 고객의 선호 시간대, 체류 패턴, 커뮤니케이션 스타일까지 학습하는 맞춤형 서비스가 주효했다.</p>
 
-            <div class="highlight-box">
-                <p>"화곡 지역 셔츠룸은 더 이상 단순한 공간 대여가 아닙니다. AI가 분석한 200여 개의 데이터 포인트를 기반으로 고객 한 명 한 명에게 최적화된 경험을 설계합니다." — 마포 서비스 트렌드 연구소, 김수현 수석연구원</p>
-            </div>
+ <div class="highlight-box">
+ <p>"화곡 지역 셔츠룸은 더 이상 단순한 공간 대여가 아닙니다. AI가 분석한 200여 개의 데이터 포인트를 기반으로 고객 한 명 한 명에게 최적화된 경험을 설계합니다." — 마포 서비스 트렌드 연구소, 김수현 수석연구원</p>
+ </div>
 
-            <h2>업종 분석: 화곡 셔츠룸의 차별화 요인</h2>
-            <p>기존 셔츠룸이 물리적 환경에 집중했다면, 화곡 셔츠룸은 데이터 기반 운영 최적화에서 두각을 나타낸다. 주요 차별점은 다음과 같다:</p>
-            <ul>
-                <li><strong>실시간 수요 예측:</strong> 시간대별 방문 패턴을 AI가 학습하여 직원 배치와 서비스 준비 시간을 최적화.</li>
-                <li><strong>개인화된 추천:</strong> 고객의 과거 이용 이력을 바탕으로 음료, 식사, 부가 서비스를 맞춤 제안.</li>
-                <li><strong>품질 모니터링:</strong> 음향, 조명, 온도 등 환경 변수를 실시간으로 조정하여 일관된 경험 유지.</li>
-                <li><strong>피드백 루프:</strong> 이용 후 데이터를 즉시 분석해 서비스 개선에 반영하는 순환 구조.</li>
-            </ul>
+ <h2>업종 분석: 화곡 셔츠룸의 차별화 요인</h2>
+ <p>기존 셔츠룸이 물리적 환경에 집중했다면, 화곡 셔츠룸은 데이터 기반 운영 최적화에서 두각을 나타낸다. 주요 차별점은 다음과 같다:</p>
+ <ul>
+ <li><strong>실시간 수요 예측:</strong> 시간대별 방문 패턴을 AI가 학습하여 직원 배치와 서비스 준비 시간을 최적화.</li>
+ <li><strong>개인화된 추천:</strong> 고객의 과거 이용 이력을 바탕으로 음료, 식사, 부가 서비스를 맞춤 제안.</li>
+ <li><strong>품질 모니터링:</strong> 음향, 조명, 온도 등 환경 변수를 실시간으로 조정하여 일관된 경험 유지.</li>
+ <li><strong>피드백 루프:</strong> 이용 후 데이터를 즉시 분석해 서비스 개선에 반영하는 순환 구조.</li>
+ </ul>
 
-            <h3>데이터로 본 고객 선호도 변화</h3>
-            <p>2025년 1월부터 3월까지 화곡 셔츠룸 이용 고객 1,200명의 데이터를 분석한 결과, 응답 시간 단축과 맞춤형 추천이 만족도에 가장 큰 영향을 미치는 요소로 확인되었다. 특히 <span class="data-point">응답 시간 30% 감소</span> 시 만족도가 22% 증가하는 상관관계가 도출되었다.</p>
+ <h3>데이터로 본 고객 선호도 변화</h3>
+ <p>2025년 1월부터 3월까지 화곡 셔츠룸 이용 고객 1,200명의 데이터를 분석한 결과, 응답 시간 단축과 맞춤형 추천이 만족도에 가장 큰 영향을 미치는 요소로 확인되었다. 특히 <span class="data-point">응답 시간 30% 감소</span> 시 만족도가 22% 증가하는 상관관계가 도출되었다.</p>
 
-            <h2>전문가 진단: 앞으로의 방향성</h2>
-            <p>업계 전문가들은 화곡 셔츠룸의 AI트렌드 도입이 단순한 유행이 아닌 필수 경쟁력으로 자리잡을 것이라고 전망한다. 2025년 하반기에는 음성 인식 기반 주문 시스템과 IoT 환경 제어가 추가 도입될 예정이며, 이는 업계 표준을 다시 정의할 것으로 보인다.</p>
+ <h2>전문가 진단: 앞으로의 방향성</h2>
+ <p>업계 전문가들은 화곡 셔츠룸의 AI트렌드 도입이 단순한 유행이 아닌 필수 경쟁력으로 자리잡을 것이라고 전망한다. 2025년 하반기에는 음성 인식 기반 주문 시스템과 IoT 환경 제어가 추가 도입될 예정이며, 이는 업계 표준을 다시 정의할 것으로 보인다.</p>
 
-            <div class="cta-section">
-                <p>최신 화곡 셔츠룸 트렌드와 서비스 정보를 확인하세요</p>
-                <a href="tel:0507-1234-5678">전문가 상담 예약</a>
-            </div>
-        </article>
-    </main>
+ <div class="cta-section">
+ <p>최신 화곡 셔츠룸 트렌드와 서비스 정보를 확인하세요</p>
+ 
+ </div>
+ </article>
+ </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 마포 AI트렌드 연구소 · 화곡 셔츠룸 데이터 기반 분석</p>
-            <p>서울특별시 마포구 · 사업자등록번호: 123-45-67890</p>
-        </div>
-    </footer>
+ <footer>
+ <div class="container">
+ <p>&copy; 2025 마포 AI트렌드 연구소 · 화곡 셔츠룸 데이터 기반 분석</p>
+ <p>서울특별시 마포구 · 사업자등록번호: 123-45-67890</p>
+ </div>
+ </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const hamburger = document.querySelector('.hamburger');
-            const navLinks = document.querySelector('.nav-links');
-            if (hamburger) {
-                hamburger.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                    navLinks.classList.toggle('active');
-                });
-            }
-        });
-    </script>
+ <script>
+ document.addEventListener('DOMContentLoaded', function() {
+ const hamburger = document.querySelector('.hamburger');
+ const navLinks = document.querySelector('.nav-links');
+ if (hamburger) {
+ hamburger.addEventListener('click', function() {
+ this.classList.toggle('active');
+ navLinks.classList.toggle('active');
+ });
+ }
+ });
+ </script>
 </body>
 </html>
